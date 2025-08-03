@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="TS.css">
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Tambahkan class fade-in ketika halaman sudah siap
+    document.body.classList.add("fade-in");
+
+    // Tambahkan event untuk semua link agar ada animasi keluar
+    const links = document.querySelectorAll("a");
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (!href.startsWith("#") && !href.startsWith("javascript")) {
+                e.preventDefault();
+                document.body.classList.remove("fade-in");
+                document.body.classList.add("fade-out");
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 400); // waktu sama dengan transition
+            }
+        });
+    });
+});
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Home</title>
+  <style>
+    /* ====== Styling Umum ====== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #74b9ff, #a29bfe, #ffeaa7);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    /* ====== Kotak Nama Anggota ====== */
+    .anggota-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px auto;
+      gap: 20px;
+      max-width: 800px;
+    }
+
+    .anggota {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px 25px;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      font-size: 1.1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s, background 0.3s;
+      min-width: 200px;
+    }
+
+    .anggota:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* ====== Tombol Navigasi Bulat ====== */
+    .tombol-container {
+      margin-top: 40px;
+    }
+
+    .tombol {
+      background: #fd79a8;
+      border: none;
+      color: white;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .tombol:hover {
+      transform: translateY(-5px);
+      background: #e84393;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kelompok 5</h1>
+  <h2>Kelas: X-L SKI | Asal Sekolah: MAN 1 MADINA</h2>
+
+  <div class="anggota-container">
+    <div class="anggota">1. MUHAMMAD ALI SYAPUTRA</div>
+    <div class="anggota">2. SIFA YASMIN</div>
+    <div class="anggota">3. ASMI</div>
+  </div>
+
+  <div class="tombol-container">
+    <button class="tombol" onclick="window.location.href='MATERI.html'">Materi</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Kelompok 5. Semua Hak Dilindungi.
+  </footer>
+
+</body>
+</html>

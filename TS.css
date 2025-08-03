@@ -1,0 +1,16 @@
+/* Animasi halaman saat masuk */
+body {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* Ketika halaman sudah siap, body muncul */
+body.fade-in {
+    opacity: 1;
+}
+
+/* Animasi keluar saat pindah halaman */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}

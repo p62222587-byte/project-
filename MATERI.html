@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="TS.css">
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Tambahkan class fade-in ketika halaman sudah siap
+    document.body.classList.add("fade-in");
+
+    // Tambahkan event untuk semua link agar ada animasi keluar
+    const links = document.querySelectorAll("a");
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (!href.startsWith("#") && !href.startsWith("javascript")) {
+                e.preventDefault();
+                document.body.classList.remove("fade-in");
+                document.body.classList.add("fade-out");
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 400); // waktu sama dengan transition
+            }
+        });
+    });
+});
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi Dakwah Nabi di Mekkah</title>
+  <style>
+    /* ===== Background Gradasi Animasi ===== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #74b9ff, #a29bfe, #fd79a8, #ffeaa7);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      line-height: 1.7;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ===== Container Konten ===== */
+    .materi-container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: rgba(255,255,255,0.15);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      color: #fff;
+    }
+
+    h1, h2 {
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* ===== Tombol Kembali ===== */
+    .tombol-kembali {
+      display: inline-block;
+      margin-top: 30px;
+      background: #55efc4;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .tombol-kembali:hover {
+      background: #00b894;
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* ===== Responsif untuk HP/Tablet ===== */
+    @media (max-width: 768px) {
+      .materi-container {
+        width: 90%;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p, li {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="Screenshot_20250803-101553.jpg" alt="Ilustrasi Dakwah Nabi di Mekkah" width="100%" style="display:block;margin:20px auto;border-radius:15px;">
+
+  <div class="materi-container">
+    <h1>Materi: Dakwah Nabi Muhammad SAW di Mekkah (610–622 M)</h1>
+
+    <h2>1. Gambaran Umum Dakwah Nabi di Mekkah</h2>
+    <p>
+      Dakwah Nabi Muhammad SAW periode Mekkah berlangsung selama sekitar 13 tahun, dimulai sejak beliau menerima wahyu pertama di Gua Hira (610 M) hingga hijrah ke Madinah (622 M). 
+      Pada periode ini, fokus utama dakwah adalah pembentukan akidah (tauhid) dan keteguhan iman bagi umat Islam yang masih minoritas di tengah dominasi masyarakat Quraisy yang menganut politeisme (syirik).
+    </p>
+    <p>Ciri-ciri utama periode Mekkah:</p>
+    <ul>
+      <li>Umat Islam minoritas dan tertindas.</li>
+      <li>Belum ada kewajiban syariat sosial-politik yang kompleks (seperti zakat, puasa, atau jihad).</li>
+      <li>Fokus pada penanaman tauhid dan akhlak sebagai fondasi keimanan.</li>
+      <li>Menghadapi tekanan, intimidasi, dan boikot dari kaum Quraisy.</li>
+    </ul>
+
+    <h2>2. Substansi Dakwah Nabi Muhammad SAW di Mekkah</h2>
+    <p>Substansi dakwah adalah isi atau materi dakwah yang Nabi sampaikan. Pada periode Mekkah, substansi dakwah dapat diklasifikasikan sebagai berikut:</p>
+
+    <p><b>a. Tauhid dan Aqidah</b></p>
+    <ul>
+      <li>Mengajak manusia menyembah Allah yang Maha Esa dan meninggalkan berhala.</li>
+      <li>Menolak segala bentuk kemusyrikan dan tahayul.</li>
+    </ul>
+    <blockquote>“Katakanlah: Dialah Allah yang Maha Esa.” (QS. Al-Ikhlas: 1)</blockquote>
+
+    <p><b>b. Pembersihan Jiwa dan Akhlak Mulia</b></p>
+    <ul>
+      <li>Menanamkan nilai kejujuran, kesabaran, dan amanah.</li>
+      <li>Menghapus tradisi jahiliyah seperti membunuh bayi perempuan, mabuk-mabukan, dan permusuhan antar suku.</li>
+    </ul>
+
+    <p><b>c. Janji dan Ancaman Akhirat</b></p>
+    <ul>
+      <li>Menyampaikan kabar gembira (al-busyra) bagi orang beriman berupa surga.</li>
+      <li>Menyampaikan peringatan (inzar) tentang azab neraka bagi yang ingkar.</li>
+    </ul>
+
+    <p><b>d. Kisah-Kisah Nabi dan Umat Terdahulu</b></p>
+    <ul>
+      <li>Menguatkan hati para sahabat dengan cerita ketabahan para nabi sebelumnya.</li>
+      <li>Contoh: Kisah Nabi Nuh, Hud, Shalih, dan Musa dalam surat-surat Makkiyah.</li>
+    </ul>
+
+    <p><b>e. Pondasi Keimanan Tanpa Beban Syariat Berat</b></p>
+    <ul>
+      <li>Kewajiban shalat baru diturunkan di akhir periode Mekkah (Isra Mi’raj).</li>
+      <li>Belum ada kewajiban sosial-politik seperti zakat, jihad, dan puasa.</li>
+      <li>Fokus pada pembinaan hati dan iman.</li>
+    </ul>
+
+    <h2>3. Strategi Dakwah Nabi Muhammad SAW di Mekkah</h2>
+    <p>Strategi dakwah Nabi di Mekkah bersifat bertahap dan adaptif menghadapi situasi umat Islam yang lemah. Strategi ini dapat dibagi menjadi dua fase utama:</p>
+
+    <p><b>Fase 1: Dakwah Secara Sembunyi-Sembunyi (3 tahun pertama)</b></p>
+    <ul>
+      <li>Sasaran dakwah: keluarga, kerabat, dan sahabat dekat.</li>
+      <li>Tempat pusat dakwah: rumah Al-Arqam bin Abi Al-Arqam.</li>
+    </ul>
+    <p>Alasan strategi ini:</p>
+    <ul>
+      <li>Kaum Muslimin masih lemah secara sosial dan politik.</li>
+      <li>Menghindari konflik dengan Quraisy di tahap awal.</li>
+    </ul>
+    <p>Tokoh yang masuk Islam di fase ini: Abu Bakar, Ali bin Abi Thalib, Zaid bin Haritsah, Utsman bin Affan, Sa’ad bin Abi Waqqash.</p>
+
+    <p><b>Fase 2: Dakwah Terang-Terangan (mulai tahun ke-4 kenabian)</b></p>
+    <ul>
+      <li>Setelah turun perintah "fasda’ bima tu’mar" (QS. Al-Hijr: 94), Nabi mulai berdakwah secara terbuka.</li>
+      <li>Seruan di Bukit Shafa untuk mengajak Quraisy menyembah Allah.</li>
+      <li>Membaca Al-Qur’an di hadapan umum untuk menggugah hati.</li>
+      <li>Menghadapi penolakan dan tekanan: ejekan, siksaan, hingga pemboikotan.</li>
+    </ul>
+    <p>Metode yang digunakan:</p>
+    <ul>
+      <li>Keteladanan (uswah hasanah) dalam akhlak.</li>
+      <li>Diskusi dan dialog santun, meski sering dihadang cemoohan.</li>
+      <li>Menjaga loyalitas sahabat dengan memberikan motivasi iman dan kisah surga.</li>
+    </ul>
+
+    <p><b>Strategi Bertahan dari Tekanan Quraisy</b></p>
+    <ul>
+      <li>Hijrah ke Habasyah (Ethiopia) untuk menyelamatkan kaum Muslimin dari siksaan.</li>
+      <li>Memanfaatkan musim haji untuk bertemu kabilah-kabilah luar Mekkah.</li>
+      <li>Menguatkan iman sahabat melalui pembacaan ayat-ayat Makkiyah yang menyentuh hati.</li>
+      <li>Membangun jaringan pendukung hingga bertemu dengan Kabilah Aus dan Khazraj dari Madinah, yang akhirnya membuka jalan untuk hijrah.</li>
+    </ul>
+
+    <h2>4. Hasil dan Dampak Dakwah Nabi di Mekkah</h2>
+    <ul>
+      <li>Terbentuknya generasi Muslim awal yang kuat iman dan sabar dalam ujian (contoh: Bilal bin Rabah, Khabbab bin Al-Aratt).</li>
+      <li>Tersebarnya Islam ke luar Mekkah, hingga ke Habasyah dan Yatsrib (Madinah).</li>
+      <li>Terbangunnya fondasi akidah yang kokoh sebagai modal dakwah dan perjuangan di Madinah.</li>
+    </ul>
+
+    <h2>5. Kesimpulan</h2>
+    <p>
+      Dakwah Nabi Muhammad SAW periode Mekkah berfokus pada pembentukan akidah tauhid dan akhlak, 
+      dengan strategi bertahap dari sembunyi-sembunyi hingga terang-terangan, disertai keteladanan, kesabaran, dan motivasi spiritual. 
+      Walau menghadapi tekanan keras dari Quraisy, periode ini sukses melahirkan generasi sahabat yang beriman kokoh, 
+      menjadi pondasi bagi fase dakwah di Madinah yang lebih bersifat sosial-politik.
+    </p>
+
+    <div style="text-align: center;">
+      <a href="HOME.html" class="tombol-kembali">⬅ Kembali ke Home</a>
+    </div>
+  </div>
+  <div style="text-align:center;margin:30px 0;">
+  <iframe width="100%" height="315" 
+    src="https://www.youtube.com/embed/NeRgTXben-c" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+  <footer>
+    &copy; 2025 Kelompok 5. Semua Hak Dilindungi.
+  </footer>
+
+</body>
+</html>
